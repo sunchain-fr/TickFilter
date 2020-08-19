@@ -1,6 +1,6 @@
 {
     "name": "sunchain_fr/nova-tick-filter",
-    "description": "A Laravel Nova filter that renders into clickable pills.",
+    "description": "A Laravel Nova Ticks buttons that will be used as filter in Laravel Nova Dashboard",
     "keywords": [
         "laravel",
         "nova",
@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "TickFilterServiceProvider"
+              "SunchainFr\\TickFilter\\TickFilterServiceProvider"
             ]
         }
     },
