@@ -1,5 +1,5 @@
 {
-    "name": "digital-creative/nova-pill-filter",
+    "name": "sunchain_fr/nova-tick-filter",
     "description": "A Laravel Nova filter that renders into clickable pills.",
     "keywords": [
         "laravel",
@@ -19,13 +19,13 @@
     },
     "autoload": {
         "psr-4": {
-            "DigitalCreative\\PillFilter\\": "src/"
+            "SunchainFr\\TickFilter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "DigitalCreative\\PillFilter\\PillFilterServiceProvider"
+              "TickFilterServiceProvider"
             ]
         }
     },

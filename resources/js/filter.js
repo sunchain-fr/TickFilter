@@ -1,5 +1,5 @@
-import PillFilter from './components/PillFilter'
+import TickFilter from './components/TickFilter'
 
 Nova.booting((Vue, router, store) => {
-    Vue.component('pill-filter', PillFilter)
+    Vue.component('tick-filter', TickFilter)
 })

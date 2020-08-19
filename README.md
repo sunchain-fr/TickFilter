@@ -1,29 +1,22 @@
-# Nova Pill Filter
+# Nova Tick Filter
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/digital-creative/nova-pill-filter)](https://packagist.org/packages/digital-creative/nova-pill-filter)
-[![Total Downloads](https://img.shields.io/packagist/dt/digital-creative/nova-pill-filter)](https://packagist.org/packages/digital-creative/nova-pill-filter)
-[![License](https://img.shields.io/packagist/l/digital-creative/nova-pill-filter)](https://github.com/dcasia/nova-pill-filter/blob/master/LICENSE)
-
-A Laravel Nova filter that renders into clickable pills.
-
-![PillFilter in Action](https://raw.githubusercontent.com/dcasia/nova-pill-filter/master/screenshots/demo-1.png)
 
 # Installation
 
 You can install the package via composer:
 
 ```
-composer require digital-creative/nova-pill-filter
+composer require sunchain_fr/nova-tick-filter
 ```
 
 ## Basic Usage
 
-Create a filter as usual and extend the `DigitalCreative\PillFilter\PillFilter` class
+Create a filter as usual and extend the `SunchainFr\TickFilter\TickFilter` class
 
 ```php
-use DigitalCreative\PillFilter\PillFilter;
+use SunchainFr\TickFilter\TickFilter;
 
-class MyFilter extends PillFilter {
+class MyFilter extends TickFilter {
 
     public function apply(Request $request, $query, $values)
     {
@@ -74,7 +67,7 @@ class ExampleNovaResource extends Resource {
 Additionally you can customize the mode the filter is displayed, by default it wraps to show all pills at once, however
 there is also a drag mode:
 
-![PillFilter in Action](https://raw.githubusercontent.com/dcasia/nova-pill-filter/master/screenshots/demo-2.png)
+![TickFilter in Action](https://raw.githubusercontent.com/dcasia/nova-tick-filter/master/screenshots/demo-2.png)
 
 ```php
 class ExampleNovaResource extends Resource {
@@ -89,6 +82,10 @@ class ExampleNovaResource extends Resource {
 }
 ```
 
+The original source of this code is : https://github.com/dcasia/nova-pill-filter
+
+It is an adaptation for my own use. It is made to be used with laravel nova dashboard, it has no use as a Nova Filter 
+
 ## License
 
-The MIT License (MIT). Please see [License File](https://raw.githubusercontent.com/dcasia/nova-pill-filter/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://raw.githubusercontent.com/dcasia/nova-tick-filter/master/LICENSE) for more information.

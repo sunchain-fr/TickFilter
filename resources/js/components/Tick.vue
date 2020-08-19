@@ -12,7 +12,7 @@
 <script>
 
     export default {
-        name: 'Pill',
+        name: 'Tick',
         props: {
             active: {
                 type: Boolean,

@@ -1,27 +1,27 @@
 <?php
 
-namespace DigitalCreative\PillFilter;
+namespace SunchainFr\TickFilter;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Laravel\Nova\Filters\Filter;
 
-class PillFilter extends Filter
+class TickFilter extends Filter
 {
     /**
      * The filter's component.
      *
      * @var string
      */
-    public $component = 'pill-filter';
+    public $component = 'tick-filter';
 
     /**
      * @var string
      */
-    public $noneLabel = 'All';
+//    public $noneLabel = 'All';
 
     /**
-     * PillFilter constructor.
+     * TickFilter constructor.
      */
     public function __construct()
     {
@@ -29,7 +29,7 @@ class PillFilter extends Filter
             'showSelectNoneButton' => true,
             'single' => false,
             'mode' => 'wrap',
-            'noneLabel' => $this->getNoneLabel()
+//            'noneLabel' => $this->getNoneLabel()
         ]);
     }
 

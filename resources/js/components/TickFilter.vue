@@ -10,21 +10,14 @@
 
             <div ref="content" class="flex px-2 pb-2" :class="{ 'flex-wrap': filter.mode === 'wrap' }">
 
-                <Pill v-if="filter.showSelectNoneButton" :active="currentActive.length === 0"
-                      @click.native="clearFilters()">
-
-                    {{ filter.noneLabel }}
-
-                </Pill>
-
-                <Pill v-for="option in filter.options"
+                <Tick v-for="option in filter.options"
                       :key="option.value"
                       :active="currentActive.includes(option.value)"
                       @click.native="enableFilter(option.value)">
 
                     {{ option.name }}
 
-                </Pill>
+                </Tick>
 
             </div>
 
@@ -36,12 +29,12 @@
 
 <script>
 
-    import Pill from './Pill'
+    import Tick from './Tick'
     import ScrollBooster from 'scrollbooster'
 
     export default {
-        name: 'PillFilter',
-        components: { Pill },
+        name: 'TickFilter',
+        components: { Tick },
         props: {
             resourceName: {
                 type: String,
